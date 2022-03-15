@@ -1,5 +1,6 @@
 FROM centos:latest
 MAINTAINER kshitijrathore.ksr@gmail.com
+RUN yum -y upgrade
 RUN yum install httpd -y
 RUN yum zip -y
 RUN yum unzip -y
