@@ -1,8 +1,8 @@
 FROM centos:latest
 MAINTAINER kshitijrathore.ksr@gmail.com
-RUN yum install -y httpd
-RUN yum zip
-RUN yum unzip
+RUN yum install httpd -y
+RUN yum zip -y
+RUN yum unzip -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page272/fruitkha.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip fruitkha.zip
