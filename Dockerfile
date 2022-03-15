@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 MAINTAINER kshitijrathore.ksr@gmail.com
 RUN yum -y upgrade
 RUN yum install httpd -y
