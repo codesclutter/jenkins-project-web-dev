@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER kshitijrathore.ksr@gmail.com
-RUN yum update
+RUN yum update -y
 RUN yum install -y httpd zip unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page272/fruitkha.zip /var/www/html/
 WORKDIR /var/www/html
